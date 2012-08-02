@@ -25,54 +25,59 @@
                 <form action="additem.html" method="post">
                     <fieldset>
                         <legend>Add Your TO DO here</legend>
-            <ul>
-            <li><label for="ttopic">Task Topic:</label>
-                <input type="radio" value="personal" id="personal" name="ttopic" /><label for="personal">Personal</label>
-                <input type="radio" value="school" id="school" name="ttopic" /><label for="school">School</label>
-                <input type="radio" value="work" id="work" name="ttopic" /><label for="work">Work</label>
-                <input type="radio" value="other" id="other" name="mtopic" /><label for="other">Other</label>
-            </li>
-            <li><label for="tdate">Date: </label> <input type="date" id="date" placeholder="day/month/year" /></li>
-            <li><label for="tname">Assign Task </label> <input type="text" id="tname" /></li>
-            <li><label for="ttype" id="ttype">Task Type:</label>
-            <select id="media" />
-            <optgroup label="School">
-                <option value="study">study</option>
-                <option value="homework">homework</option>
-                <option value="read">read</option>
-                <option value="test">test</option>
-            </optgroup>
+                            <ul>
+                                <li><label for="ttopic">Task Topic:</label>
+                                    <input type="radio" value="personal" id="personal" name="ttopic" /><label for="personal">Personal</label>
+                                    <input type="radio" value="school" id="school" name="ttopic" /><label for="school">School</label>
+                                    <input type="radio" value="work" id="work" name="ttopic" /><label for="work">Work</label>
+                                    <input type="radio" value="other" id="other" name="mtopic" /><label for="other">Other</label>
+                                </li>
+                                <li><label for="tdate">Date: </label> <input type="date" id="date" placeholder="day/month/year" /></li>
+                                <li><label for="tname">Assign Task </label> <input type="text" id="tname" /></li>
+                                <li><label for="ttype" id="ttype">Task Type:</label>
+                           
+                                <select id="task" />
+                                    <optgroup label="School">
+                                        <option value="study">study</option>
+                                        <option value="homework">homework</option>
+                                        <option value="read">read</option>
+                                        <option value="test">test</option>
+                                    </optgroup>
             
-            <optgroup label="Home">
-                <option value="clean outside">clean outside</option>
-                <option value="clean inside">clean inside</option>
-                <option value="laundry">laundry</option>
-            </optgroup>
-            
-            <optgroup label="Work">
-                <option value="project">project</option>
-                <option value="other">other</option>
-            </optgroup>
+                                    <optgroup label="Personal">
+                                        <option value="clean outside">clean outside</option>
+                                        <option value="clean inside">clean inside</option>
+                                        <option value="laundry">laundry</option>
+                                        <option value="errand">errand</option>
+                                        <option value="walk the dog">walk the dog</option>
+                                    </optgroup>
+                
+                                    <optgroup label="Work">
+                                        <option value="project">project</option>
+                                        <option value="other">other</option>
+                                    </optgroup>
         
-        </select>
-            <li><label for="trating">Importance: </label>1. Get to it when I can<input type="range" min="1" max="10" name="rating" type="range" id="rating" />10. Get it done now!</li>
-            <li><label for="tcomments">Notes:</label> <textarea id="comments" /></textarea></li>
-            
-          
-                <input type="submit" value="Add Task" />
-            </ul>
-            </fieldset>
+                                </select>
+                           
+                                <li><label for="trating">Importance: </label>1. Get to it when I can<input type="range" min="1" max="10" name="rating" type="range" id="rating" />10. Get it done now!</li>
+                                <li><label for="tcomments">Notes:</label> <textarea id="comments" /></textarea></li>
+                                    <input type="submit" value="Add Task" />
+                            </ul>
+                    </fieldset>
                 </form>
-                    </p>
-            </article>
-            <section>
-        <nav>
-            <ul id="numlist">
-                <li><a href="additem.html">Edit A Task</a></li>
-                <li><a href="#">View All Tasks</a></li>
-            </ul>
-        </nav>
-            </section>
+            </p>
+        </article>
+        <section>
+            <nav>
+                <ul id="numlist">
+                    <li><a href="additem.html">Edit A Task</a></li>
+                    <li><a href="#">View All Tasks</a></li>
+                 </ul>
+            </nav>
+        </section>
+
 <footer></footer>
+
 </body>
+
 </html>
