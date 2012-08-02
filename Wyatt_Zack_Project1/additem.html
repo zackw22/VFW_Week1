@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+    <!--
+    Zack Wyatt
+    Visual Frameworks
+    Week 1 Project 1
+    Web App
+    -->
+<html>
+        
+    <head>
+        <title>Honey Do List</title>
+            <meta type="charset" content = "utf-8" />
+            <meta type="robots" content="index,follow" />
+            <meta type="viewport" content="user-scalable=no, width=device-width" />
+            <meta type="description" content="Add a task for you or a loved one" />
+            <meta type="keywords" content = "to do, honey do, zack wyatt, vfw" />
+    </head>
+    <body>
+        <header>
+            <h1><a href="index.html">Honey Do</a></h2>
+            <h2>Add a Task</h2>
+        </header>
+        <article>
+            <p>
+                <form action="additem.html" method="post">
+                    <fieldset>
+                        <legend>Add Your TO DO here</legend>
+            <ul>
+            <li><label for="mdate">Date: </label> <input type="date" id="date" placeholder="day/month/year" /></li>
+            <li><label for="tname">Assign Task </label> <input type="text" id="tname" /></li>
+            <li><label for="ttype" id="ttype">Task Type:</label>
+            <select id="media" />
+            <optgroup label="Traditional">
+                <option value="book">book</option>
+                <option value="document">document</option>
+                <option value="music">music</option>
+                <option value="movie">movie</option>
+            </optgroup>
+            
+            <optgroup label="Digital">
+                <option value="pdf">.pdf</option>
+                <option value="doc">.doc</option>
+            </optgroup>
+            
+            <optgroup label="Recording">
+                <option value="audio">audio</option>
+                <option value="video">video</option>
+            </optgroup>
+        
+        </select>
+            </li>
+            <li><label for="trating">Importance: </label>1. Get to it when I can<input type="range" min="1" max="10" name="rating" type="range" id="rating" />10. Get it done now!</li>
+            <li><label for="ttopic">Task Topic:</label>
+                <input type="radio" value="personal" id="personal" name="ttopic" /><label for="personal">Personal</label>
+                <input type="radio" value="school" id="school" name="ttopic" /><label for="school">School</label>
+                <input type="radio" value="work" id="work" name="ttopic" /><label for="work">Work</label>
+                <input type="radio" value="other" id="other" name="mtopic" /><label for="other">Other</label>
+            </li>
+            <li><label for="tcomments">Notes:</label> <textarea id="comments" /></textarea></li>
+                <input type="submit" value="Add Task" />
+            </ul>
+            </fieldset>
+                </form>
+                    </p>
+            </article>
+            <section>
+        <nav>
+            <ul id="numlist">
+                <li><a href="additem.html">Create A Task</a></li>
+                <li><a href="#">View All Tasks</a></li>
+            </ul>
+        </nav>
+            </section>
+<footer></footer>
+</body>
+</html>
